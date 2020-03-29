@@ -1,0 +1,61 @@
+/* style propre à la page */
+body{
+    font-family: 'Cabin Sketch', cursive;
+    background-image:url(assets/landscape-152502_1280.png);
+    /* background-repeat:"repeat"; */
+    background-size: 115%;
+}
+a{
+    color: #555555;
+    font-family: 'Cabin Sketch', cursive;
+}
+a:hover{
+    color:#b44981;
+}
+.card{
+    background-color: transparent;
+}
+.contactIcon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("assets/contact.png");
+}
+.home{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("assets/taupeHome2.png");
+}
+img{
+    vertical-align: text-bottom;
+}
+.img-thumbnail{
+    padding: 0,9 rem;
+    max-width: 125%;
+}
+.jumbotron{
+    color:#555555;
+    background-color: transparent;
+}
+#logoTaupeIndex{
+    max-width: 30%;
+}
+.navbar{
+    align-items: baseline;
+    padding: 20px 20px;
+}
+.navbar-brand{
+    white-space: inherit;
+}
+.navbar-text{
+    text-justify: none;
+}
