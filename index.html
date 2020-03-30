@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Michèle</title>
+    <title>Michèle Raharinosy - CV</title>
     <!-- chargement CSS -->
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="styles.css">
@@ -11,45 +11,69 @@
 </head>
 <body>
     <header class="navbar navbar-expand-md">
-        <a href="" id="logoTaupeIndex" class="navbar-brand"><img src="assets/taupeLogo.png" alt="Photo de Taupinou" class="flex-start img-thumbnail rounded-circle">
-        </a>
-        <button class="navbar-light navbar-toggler" data-toggle="collapse" data-target="#menuIndex">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="menuIndex" class="collapse navbar-collapse">
-            <nav class="navbar-nav ml-auto h4">
-                <a id="menuJeu" class="nav-item nav-link" href="#">Jouons!</a>
-                <a id="menuQuiSuisJe" class="nav-item nav-link" href="#" >Qui suis-je?</a>
-                <a id="menuQuiSuisJe" class="nav-item nav-link" href="miCv.html" >Retour au CV</a>
-            </nav>
-        </div><!--fin div menuIndex-->
-        <main>
-    </header>
-            <div class="row">
-                <div class="col-12 col-md-6 offset-md-3">
-                    <div class="jumbotron border">
-                        <h1 class="display-4">Attention les taupes!</h1>
-                        <p class="lead">Allons à la chasse aux taupes qui dévastent notre jardin!</p>
-                        <hr class="my-4">
-                        <p class="lead">Règles du jeu</p>
-                        <p>Vous avez 20 secondes pour chasser le plus de taupes. Pour cela, vous devrez utiliser votre souris ou les touches E / F / C /S</p>
-                        <a class="btn btn-secondary btn-lg" href="#" role="button">Learn more</a>
-                    </div>    
-                </div>
+            <div id="moi">
+                <h1>Michèle Raharinosy</h1>
+                <h2>Développeuse web full stack Javascript</h2>
             </div>
-        </main>
+            
+            <button class="navbar-light navbar-toggler" data-toggle="collapse" data-target="#menuNavCv">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menuNavCv" class="collapse navbar-collapse">
+                <nav class="navbar-nav nav-pills ml-auto h5">
+                    <a id="menuPrincipalJeu" class="nav-item nav-link" href="leJeuTaupe.html"><span class="home" title="Retour à la page d'accueil"></span></a>
+                    <a id="menuPrincipalCv" class="av-item nav-link disabled" href="#" >Mon parcours</a>                
+                    <a id="menuPrincipalContact" class="nav-item nav-link" data-toggle="collapse" href="#contactMe" > <span>Me contacter</span> 
+                    <section id="contactMe" class="collapse border">
+                        <a href="">Tel: 06 12 27 33 14</a><br>
+                        <a href="mailto:mraharinosy@gmail.com" target="_blank">mraharinosy@gmail.com</a><br>
+                        <a href="https://www.linkedin.com/in/michèle-raharinosy/" target="_blank">www.linkedin.com/in/michèle-raharinosy</a><br>
+                        <a href="https://github.com/MicheleRaharinosy" target="_blank">https://github.com/MicheleRaharinosy</a>
+                    </section>
+                    </a>
+                </nav>
+            </div><!--fin div menuNavCv-->
+    </header>
+    <main>
+        <section class="container">
+            <div class="row my-5">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <section class="card card-group">
+                        <img src="assets/animal-158236_640.png" alt="image d'une taupe" class="card-img-top imgJeu">
+                        <audio id="sonRireTaupe"><source src="assets/chipmunk.mp3" type="audio/mp3"></audio>
+                        <div class="card-body">
+                            <h1 class="h3 card-title">Le jeu</h1>
+                            <p class="card-text">C'est un jeu trop genial fait par une super nana :)</p>
+                            <a href="leJeuTaupe.html" class="btn btn-secondary activer">Jouer !</a>
+                        </div>
+                    </section>
+                </div><!--fin div card Jeu-->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <section class="card card-group">
+                        <img src="assets/mole-2089816_640.png" alt="Image silhouette taupe" class="card-img-top">
+                        <div class="card-body">
+                            <h1 class="h3 card-title">Qui suis-je</h1>
+                            <p class="card-text">Et oui... qui suis-je? Quel a été mon parcours jusqu'ici? <br> Pour le découvrir il faudra dans un premier temps, jouer un peu... <br><small>Et pour les impatients cherchez quand même un peu...</small></p>
+                            <a href="" class="btn-primary boutonCv">bravo, c'est ici !</a>
+                            <a href="assets/cvMicheleRaharinosyDevJS.pdf" download="" class="btn-primary boutonCv">pour le pdf, c'est ici !</a>
+                        </div>
+                    </section>
+                </div><!--fin div Compétences-->
+            </div><!--fin row1-->
+        </section>
+    </main>
     <footer>
         
     </footer>
-    <!-- chargement aurtres doc source -->
+    <!-- chargement autres doc source -->
     <script src="vendors/jQuery/jquery-3.4.1.js"></script>
     <script src="vendors/bootstrap/js/bootstrap.js"></script>
     <script src="script.js"></script>
     <script>
-        var x = document.getElementById("myAudio"); 
-            function playAudio() { 
-            x.play(); 
-            } 
+       $(".imgJeu").on("click",function(){
+           var audio= $("#sonRireTaupe")[0];
+           audio.play()
+       });
     </script>
 </body>
 </html>

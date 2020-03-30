@@ -4,14 +4,27 @@ body{
     background-image:url(assets/landscape-152502_1280.png);
     /* background-repeat:"repeat"; */
     background-size: 115%;
+    color: #4e4e4e;
 }
 a{
-    color: #555555;
+    color: #4e4e4e;
     font-family: 'Cabin Sketch', cursive;
 }
 a:hover{
     color:#b44981;
 }
+.boutonCv.btn-primary {
+    color: transparent;
+    background-color:transparent;
+    border-color: transparent;
+  }
+  
+.boutonCv.btn-primary:hover {
+    color: #fff;
+    background-color:transparent;
+    border-color: #6c757d;
+    font-size: x-small;
+  }
 .card{
     background-color: transparent;
 }
@@ -35,18 +48,21 @@ a:hover{
     background-size: 100% 100%;
     background-image: url("assets/taupeHome2.png");
 }
+#contactMe{
+    background-color: #6c757d;
+    color: #fff;
+    font-size: initial;
+    font-weight: lighter;
+}
 img{
     vertical-align: text-bottom;
-}
-.img-thumbnail{
-    padding: 0,9 rem;
-    max-width: 125%;
 }
 .jumbotron{
     color:#555555;
     background-color: transparent;
 }
-#logoTaupeIndex{
+.logoTaupe.img-thumbnail{
+    padding: 0,9;
     max-width: 30%;
 }
 .navbar{
