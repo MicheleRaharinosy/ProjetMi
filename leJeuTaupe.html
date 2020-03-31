@@ -9,40 +9,37 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700&display=swap" rel="stylesheet"> 
 </head>
-<body>
-    <header class="navbar navbar-expand-md">
-        <a href="index.html" class="navbar-brand " target="_parent"><img src="assets/taupeLogo.png" alt="Photo de Taupinou" class="flex-start img-thumbnail rounded-circle logoTaupe">
-        </a><!--logo tape taupe-->
-        <button class="navbar-light navbar-toggler" data-toggle="collapse" data-target="#menuJeuTaupe">
-            <span class="navbar-toggler-icon"></span>
-        </button><!--bouton jeu-->
+<body id="fondDuJeu">
+    <header id="barreJeu">
+        <ul class="navbar h3 bg-white border border-secondary">
+            <li id="bonusJeu" class="nav-link">Bonus</li>
+            <li id="timerJeu" class="nav-link">Timer</li>
+            <li id="scoreJeu" class="nav-link">Score</li>
+        </ul>
     </header>
-        <main>
-            <div class="row">
-                <div class="col-12 col-md-6 offset-md-3">
-                    <div class="jumbotron border">
-                        <h1 class="display-4">Attention les taupes!</h1>
-                        <p class="lead">Allons à la chasse aux taupes qui dévastent notre jardin!</p>
-                        <hr class="my-4">
-                        <p class="lead">Règles du jeu</p>
-                        <p>Vous avez 20 secondes pour chasser le plus de taupes. Pour cela, vous devrez utiliser votre souris ou les touches E / F / C /S</p>
-                        <a class="btn btn-secondary text-align-right" href="leJeuTaupe.html" role="button">C'est parti</a>
-                    </div>    
-                </div>
-            </div>
-        </main>
-    <footer>
+    <main id="espaceJeu">
+            <div ><!--Ranger de trous 1-->
+                <img id="trouUn" src="assets/trouTaupe1.png" class="row-cols-3 row-cols-lg-6 offset-lg-4 " alt="Trou de taupe vide">
+                <img src="assets/trouTaupe1.png" class="row-cols-3 row-cols-lg-6 offset-lg-1" alt="Trou de taupe vide">
+            </div><!--Ranger de trous 1 fin-->
+            <div class="d-flex"><!--Ranger de trous 2-->
+                <button id = "boutonJeuStart" class="btn btn-secondary row-cols-3 row-cols-lg-4 offset-lg-1 order-2 order-lg-2" >Prêt??? Go!!!</button>
+                <img src="assets/trouTaupe1.png" class="row-cols-3 row-cols-lg-4 offset-lg-3 order-1 order-lg-1" alt="Trou de taupe vide">
+                <img src="assets/trouTaupe1.png" class="row-cols-3 row-cols-lg-4 offset-lg-1 order-3 order-lg-3" alt="Trou de taupe vide">
+            </div><!--Ranger de trous 2 fin-->
+            <div ><!--Ranger de trous 3-->
+                <img src="assets/trouTaupe1.png" class="row-cols-3 row-cols-lg-6 offset-lg-4 " alt="Trou de taupe vide">
+                <img src="assets/trouTaupe1.png" class="row-cols-3 row-cols-lg-6 offset-lg-1" alt="Trou de taupe vide">
+            </div><!--Ranger de trous 3 fin-->
 
-    </footer>
-    <!-- chargement aurtres doc source -->
+    </main>
+    
+<!-- chargement autres doc source -->
     <script src="vendors/jQuery/jquery-3.4.1.js"></script>
     <script src="vendors/bootstrap/js/bootstrap.js"></script>
     <script src="script.js"></script>
     <script>
-        var x = document.getElementById("myAudio"); 
-            function playAudio() { 
-            x.play(); 
-            } 
+        
     </script>
 </body>
 </html>

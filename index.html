@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body  id="fondPrincipal">
+    <!-- Début spécification barre de navigation -->
     <header class="navbar navbar-expand-md">
             <div id="moi">
                 <h1>Michèle Raharinosy</h1>
                 <h2>Développeuse web full stack Javascript</h2>
             </div>
             
+            <!-- début du menu -->
             <button class="navbar-light navbar-toggler" data-toggle="collapse" data-target="#menuNavCv">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div id="menuNavCv" class="collapse navbar-collapse">
                 <nav class="navbar-nav nav-pills ml-auto h5">
                     <a id="menuPrincipalJeu" class="nav-item nav-link" href="leJeuTaupe.html"><span class="home" title="Retour à la page d'accueil"></span></a>
@@ -33,11 +36,14 @@
                     </a>
                 </nav>
             </div><!--fin div menuNavCv-->
+            <!-- fin du menu -->
+
     </header>
+    <!-- fin de spécification barre de navigation -->
     <main>
         <section class="container">
             <div class="row my-5">
-                <div class="col-12 col-md-6 col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6"> <!--Debut div card Jeu-->
                     <section class="card card-group">
                         <img src="assets/animal-158236_640.png" alt="image d'une taupe" class="card-img-top imgJeu">
                         <audio id="sonRireTaupe"><source src="assets/chipmunk.mp3" type="audio/mp3"></audio>
@@ -48,7 +54,7 @@
                         </div>
                     </section>
                 </div><!--fin div card Jeu-->
-                <div class="col-12 col-md-6 col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6"> <!--Début div card CV-->
                     <section class="card card-group">
                         <img src="assets/mole-2089816_640.png" alt="Image silhouette taupe" class="card-img-top">
                         <div class="card-body">
@@ -58,12 +64,12 @@
                             <a href="assets/cvMicheleRaharinosyDevJS.pdf" download="" class="btn-primary boutonCv">pour le pdf, c'est ici !</a>
                         </div>
                     </section>
-                </div><!--fin div Compétences-->
+                </div><!--fin div card CV-->
             </div><!--fin row1-->
         </section>
     </main>
-    <footer>
-        
+    <footer class="navbar">
+        <span>Michèle Raharinosy - 2020 - Atelier Front DIW JS 12</span>
     </footer>
     <!-- chargement autres doc source -->
     <script src="vendors/jQuery/jquery-3.4.1.js"></script>
