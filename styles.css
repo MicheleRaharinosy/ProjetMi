@@ -87,3 +87,31 @@ img{
 .navbar-text{
     text-justify: none;
 }
+.trou{
+    position: relative;
+    display: inline-block;
+    box-sizing: content-box;
+    width: 180px;
+    height: 134px;
+}
+.trou img{
+    display: block;
+    position:  absolute;
+    top: 0; 
+    left: 0;
+    z-index: 20;
+}
+.trou img.step0 { z-index: 10; }
+.trou img.step1 { z-index: 11; }
+.trou img.step2 { z-index: 12; }
+.trou img.step3 { z-index: 13; }
+.trou img.step4 { z-index: 14; }
+.trou img.step5 { z-index: 15; }
+
+.anim{
+    visibility: hidden;
+    transition: visibility 0.10s;
+}
+.test:hover .anim {
+    visibility: visible ;
+    }
