@@ -1,7 +1,4 @@
 // script JS
 $(function(){
-
-
-
-
-})
+    
+});
