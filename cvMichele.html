@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Michèle Raharinosy DIW full stack Javascript</title>
+    <!-- chargement CSS -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700&display=swap" rel="stylesheet"> 
+    <style>
+        .card{
+            background-color: lightcyan;
+            opacity: 80%;
+            width: auto;
+        }
+        .card-body{
+            padding-left: 30px;
+        }
+        .accordion>.card>.card-header{
+            margin-bottom: 12px;
+        }
+        ul{
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body class="cvBody container">
+    <header>  
+        <nav class="navbar navbar-expand-sm justify-content-between">
+            <img src="assets/photo.jpg" id="photoMi" alt="Photo Michèle" class="navbar-brand img-circle img-thumbnail">
+            <span class="navbar-text h2 align-top text-center">Michèle RAHARINOSY <br>Développeuse web full stack Javascript</span>
+                <div class="d-flex">
+                    <div class="dropdown">
+                            <button type="button" class="btn btn-secondary-outline dropdown-toggle" id="boutonCV" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CV</button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="boutonCV">
+                                    <a class="dropdown-item" href="#cvAPropos">A PROPOS</a>
+                                    <a class="dropdown-item" href="#cvExperiences">EXPERIENCES</a>
+                                    <a class="dropdown-item" href="#cvFormation">FORMATION</a>
+                                    <a class="dropdown-item" href="#cvComportement">COMPETENCES COMPORTEMENTALES</a>
+                                    <a class="dropdown-item" href="#cvTechniques">COMPETENCES TECHNIQUES</a>
+                                    <a class="dropdown-item" href="#cvLangue">LANGUE</a>
+                                    <a class="dropdown-item" href="#cvHobbies">HOBBIES</a>
+                                </div>
+                    </div>
+                            <a href="index.html" class="btn link home" title="Page d'accueil"></a>                       
+                </div><!--fin div menuNavCv-->
+                
+        </nav>   
+    </header>
+    <main>
+        <div id="cvAPropos" class="card">
+            <h4 class="card-header">A PROPOS DE MOI</h4> 
+                <div class="card-body text-center">
+                   <p>
+                        Après 14 ans d'expériences dans les Ressources Humaines dont 8 ans comme consultante en système d'information RH. J'ai pu voir le métier se digitaliser et j'ai accompagné mes clients dans cette transformation. C'est à cette occasion que j'ai découvert mon appétence pour le secteur du numérique et que j'ai voulu changer de métier pour devenir développeur web. 
+                    </p>
+                </div><!--Fin card-body A propos-->
+        </div><!--fin card A propos-->
+        <div id="cvFormation" class="card">
+            <h4 class="card-header">MA FORMATION</h4> 
+                <div class="card-body">
+                    <h5>Développeur web full stack Javascript</h5>
+                        <h6>IFOCOP - 2020</h6>
+                            <p>
+                                Diplôme de niveau 6 enregistré au RNCP <br>
+                                HTML, CSS, Bootstrap, Javascript, jQuery, MongoDB, Node.Js, Angular, SQL, VBA, Git, Github 
+                            </p> 
+                    <h5>Gestionnaire du personnel</h5>
+                        <h6>Sup des RH - 2007</h6>
+                            <p>
+                                Titre certifié de niveau 6 enregistréau RNCP
+                            </p>
+                    <h5>Développeur d'applications</h5>
+                        <h6>Heig Marne-la-Vallée - 2004</h6>
+                            <p>
+                                Niveau BTS Informatique de gestion
+                            </p>
+                    </div><!--fin formation-->
+                </div><!--fin card-body Formation-->
+            
+        <div id="cvExperiences"class="card">
+            <h4 class="card-header"><a>MES EXPERIENCES PROFESSIONNELLES</a></h4>
+                <div class="card-body">
+                    <h5>Consultante SIRH de 2011 à 2019</h5>
+                        <em>AdeRHis :</em>  <br> 
+                        <em>pour les clients: Accor, Allianz, Véolia SA, CMCEE et Saint-Gobain et pour les éditeurs de logiciels: ADP-GSI et Cegedim-SRH</em>
+                        <ul>
+                            <li>AMOA : Recenser les besoins du commanditaire, établir le cahier des charges, établir les spécifications fonctionnelles, piloter les phases de recette de l'application, concevoir des supports de formation et former des utilisateurs, présenter les évolutions du système d'information aux commanditaires. </li>
+                            <li>MOE : Rédiger des spécifications fonctionnelles, paramétrer l'outil, effectuer les tests et corriger les anomalies</li>
+                            <li>Chargé d'études RH: Collecter et analyser les données sociales, réaliser des études ponctuelles et des reportings récurrents.</li>
+                        </ul>
+                    <h5>Ressources Humaines de 2005 à 2011</h5>
+                        <em>Nestlé, Saint-Gobain, Placoplatre, Toyota Material Handling France, Kraft foods France</em>
+                        <ul>
+                            <li>Formation : Recueillir le besoin, mettre en oeuvre et suivre le plan de formation et établir le bilan de formation.</li>
+                            <li>Paie : Saisir, contrôler les paies et établir des déclarations sociales</li>
+                            <li>Administration du personnel : Rédiger les contrats de travail, administrer les dossiers individuels du personnel.</li>
+                        </ul>
+                    <h5>Développeur d'applications stagiaire 2005 (2 mois)</h5>
+                        <em>Lavazza France</em>
+                        <ul>
+                            <li>Développer de nouvelles spécificités et optimiser l'existant.</li>
+                            <li>Créer une interface client ergonomique.</li>
+                            <li>Tester les développements.</li>
+                            <li>Présenter le résultat aux équipes</li>
+                        </ul>
+                </div><!--Fin card-body Experience-->
+            </div><!--fin expériences professionnelles-->
+        <div id="cvComportement" class="card">
+            <h4 class="card-header">MES COMPETENCES COMPORTEMENTALES</h4>
+                <div class="card-body">
+                    <ul>
+                        <li>Adaptabilité</li>
+                        <li>Enthousiasme</li>
+                        <li>Esprit d'équipe</li>
+                        <li>Sens du service</li>
+                    </ul>     
+                </div><!--Fin card-body Comportement-->
+        </div><!--fin compétences comportementales-->
+        <div id="cvTechniques" class="card">
+            <h4 class="card-header">MES COMPETENCES TECHNIQUES</h4>
+                <div class="card-body">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Javascript</li>
+                        <li>jQuery</li>
+                        <li>Angular</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>VBA</li>
+                        <li>SQL</li>
+                        <li>Git</li>
+                        <li>Github</li>
+                        <li>Jira</li>
+                    </ul>
+                </div><!--Fin card-body technique-->
+        </div><!--fin compétences techniques-->
+        <div id="cvLangue" class="card">
+            <h4 class="card-header">LANGUE</h4>
+                <div class="card-body">
+                    <ul>
+                        <li>Anglais : professionnel</li>
+                    </ul>
+                </div><!--fin card-body langue-->
+        </div><!--fin langue--> 
+        <div id="cvHobbies" class="card">
+            <h4 class="card-header">MES HOBBIES</h4>
+                <div class="card-body">
+                    <ul>
+                        <li>Volley-ball : 30 ans de pratique et animatrice baby et école de volley</li>
+                        <li>Cyclotourisme : débutante</li>
+                    </ul>
+                </div><!--fin card-body hobbies-->
+        </div><!--fin hobbies--> 
+    </main>
+    <footer>
+        <nav class="navbar navbar-expand-sm justify-content-between">
+            <a href="+33612273312" class="btn btn-secondary">Téléphone</a>
+            <a href="mailto:mraharinosy@gmail.com" class="btn btn-secondary">Email</a>
+            <a href="https://www.linkedin.com/in/michèle-raharinosy/" target= "_blank" class="btn btn-secondary">linkedin</a>
+        </nav>
+    </footer>
+     <!-- chargement autres doc source -->
+     <script src="vendors/jQuery/jquery-3.4.1.js"></script>
+     <script src="vendors/bootstrap/js/bootstrap.js"></script>
+     <script src="script.js"></script>
+     <script>
+       
+     </script>
+</body>
+</html>

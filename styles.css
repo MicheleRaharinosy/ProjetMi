@@ -2,8 +2,14 @@
 body{
     font-family: 'Cabin Sketch', cursive;
     color: rgb(44, 54, 39);
-    background-size: initial;
-    background-repeat: round;
+    background-color:lightcyan; 
+    background-image: url("assets/paysage.png");
+    background-position:  top;
+    background-size: cover;
+    background-repeat:  round;
+    background-origin:  border-box;
+    background-clip:  border-box;
+    background-attachment: fixed;
     }
 a{
     color: #4e4e4e;
@@ -11,6 +17,9 @@ a{
 }
 a:hover{
     color:#b44981;
+}
+#barreJeu{
+    min-height: 325px;
 }
 .boutonCv.btn-primary {
     color: transparent;
@@ -26,17 +35,14 @@ a:hover{
   }
 .card{
     background-color: transparent;
+    width: 300px;
 }
-.contactIcon{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    vertical-align: middle;
-    content: "";
-    background: no-repeat center center;
-    background-size: 100% 100%;
-    background-image: url("assets/contact.png");
+/* .card-header{
+    transition: .3s transform ease-in-out;
 }
+.card-header .collapsed {
+    transform: rotate(90deg);
+  } */
 .home{
     display: inline-block;
     width: 50px;
@@ -47,27 +53,20 @@ a:hover{
     background-size: 100% 100%;
     background-image: url("assets/taupeHome2.png");
 }
-#fondPrincipal{
-    background: url("assets/landscape.png") center / cover no-repeat fixed;
-}
-#fondDuJeu{
-    background: url("assets/paysage.png") center / cover no-repeat fixed;
-}
-#barreJeu{
-    min-height: 325px;
+h4{
+    text-align: center;
 }
 #espaceJeu{
     margin-top: 50px;
     position: sticky;
 }
 #contactMe{
-    background-color: #6c757d;
     color: #fff;
     font-size: initial;
     font-weight: lighter;
 }
-img{
-    vertical-align: text-bottom;
+#photoMi{
+    border-radius: 25%;
 }
 .jumbotron{
     color:#555555;
@@ -78,7 +77,6 @@ img{
     max-width: 30%;
 }
 .navbar{
-    align-items: baseline;
     padding: 20px 20px;
 }
 .navbar-brand{
