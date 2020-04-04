@@ -85,6 +85,17 @@ h4{
 .navbar-text{
     text-justify: none;
 }
+.toTop{
+    content: "";
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 116px;
+    height: 188px;
+    background: url("assets/scrolltop-mini.png");
+    opacity: 0.6;
+
+}
 .trou{
     position: relative;
     display: inline-block;

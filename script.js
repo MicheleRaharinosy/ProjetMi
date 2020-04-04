@@ -6,7 +6,10 @@ $(function(){
         $(this).hide(1000);
     });
 
-//clique sur une taupe sortie
+//scroll to top
+    
+
+    
 
 
 
