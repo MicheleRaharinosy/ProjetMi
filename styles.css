@@ -57,7 +57,7 @@ h5{
     background-size: 100% 100%;
     background-image: url("assets/taupeHome2.png");
 }
-h4{
+h4, .card-header{
     text-align: center;
 }
 #espaceJeu{
