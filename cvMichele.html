@@ -12,12 +12,10 @@
         .card{
             background: linear-gradient(0deg, rgba(255,255,255,1) 42%, rgba(229,197,208,1) 100%);
             width: auto;
+            margin-bottom: 0.5rem;
         }
         .card-body{
-            padding-left: 30px;
-        }
-        .accordion>.card>.card-header{
-            margin-bottom: 12px;
+            padding-left: 50px;
         }
         ul{
             margin-top: 12px;
@@ -28,7 +26,10 @@
         <header id="cvTop">  
             <nav class="navbar navbar-expand-sm justify-content-between">
                 <img src="assets/photo.jpg" id="photoMi" alt="Photo Michèle" class="navbar-brand img-circle img-thumbnail">
-                <h1 class="navbar-text align-top text-center">Michèle RAHARINOSY <br>Développeuse web full stack Javascript</h1>
+                <div class="navbar-text align-top text-center">
+                    <h1 >Michèle RAHARINOSY</h1>
+                    <h2>Développeuse full-stack</h2>
+                </div>
                     <div class="d-flex">
                         <div class="dropdown">
                                 <button type="button" class="btn btn-secondary-outline dropdown-toggle" id="boutonMenuCV" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CV</button>
@@ -48,48 +49,60 @@
         </header>
         <main>
             <div id="cvAPropos" class="card">       
-                <h4 class="card-header">A PROPOS DE MOI</h4>
+                <h4 class="card-header">A propos de moi</h4>
                         <div class="card-body text-center">
                             <p>
-                                Après 14 ans d'expériences dans les Ressources Humaines, dont 8 ans comme consultante en système d'information RH, j'ai pu voir le métier se digitaliser. J'ai accompagné mes clients dans cette transformation. C'est à cette occasion que j'ai découvert mon appétence pour le développement full-stack.</em>  
-                        </p>               
+                                Après 14 ans d'expériences dans les Ressources Humaines, dont 8 ans comme consultante en système d'information RH, j'ai pu voir le métier se digitaliser. J'ai accompagné mes clients dans cette transformation. C'est à cette occasion que j'ai découvert mon appétence pour le développement full-stack. 
+                            </p>               
             </div><!--Fin card-body A propos-->
             </div><!--fin card A propos-->
             <div id="cvFormation" class="card">
-                <h4 class="card-header">MA FORMATION</h4> 
+                <h4 class="card-header">Ma formation</h4> 
                 <div class="card-body row">
-                        <h4 class="col-12 text-center">Développeur web full stack Javascript<br>
-                            <em class="h6">IFOCOP - 2020 <br>Diplôme certifié de niveau 6 enregistré au RNCP</em></h4>
-                        <h4 class="col-6 h5 text-center">Gestionnaire du personnel
-                            <br><em class="h6">Sup des RH - 2007<br>Titre certifié de niveau 6 enregistré au RNCP</em></h4>
-                        <h4 class="col-6 h5 text-center">Développeur d'applications<br>
-                                    <em class="h6">Heig Marne-la-Vallée - 2004<br>Niveau BTS Informatique de gestion</em></h4>
+                        <div class="col-12 text-center">
+                            <p>
+                                <h3 >Développeur full stack JS</h3>
+                                <h6>IFOCOP - 2020 </h6>
+                                <p>Diplôme certifié de niveau 6 enregistré au RNCP</p>
+                            </p>
+                        </div>
+                        <div class="col-6 text-center pt-4">
+                            <h4 >Gestionnaire du personnel</h4>
+                            <h6>Sup des RH - 2007</h6>
+                            <p>Titre certifié de niveau 6 enregistré au RNCP</p>
+                        </div>
+                        <div class="col-6 text-center pt-4">
+                            <h4 >Développeur d'applications</h4>
+                            <h6>Heig Marne-la-Vallée - 2004</h6>
+                            <p>Niveau BTS Informatique de gestion</p>
+                        </div>
+                        
                 </div><!--fin card-body formation-->
             </div><!--fin card Formation-->
 
                     <div id="cvExperiences"class="card">
-                        <h4 class="card-header"><a>MES EXPERIENCES PROFESSIONNELLES</a></h4>
+                        <h4 class="card-header">Mes expériences professionnelles</h4>
                             <div class="card-body">
-                                <div class="d-flex row">
+                                <div class="row">
                                         <h5 class="col-12">Consultante SIRH de 2011 à 2019</h5>
                                         <div class="card-body-items col-3">
-                                            <em>AdeRHis :</em>  <br> 
-                                            <em>pour les clients: Accor, Allianz, Véolia SA, CMCEE et Saint-Gobain et pour les éditeurs de logiciels: ADP-GSI et Cegedim-SRH</em>
+                                            <p><em>AdeRHis :</em></p>
+                                            <p><em>pour les clients: Accor, Allianz, Véolia SA, CMCEE et Saint-Gobain et pour les éditeurs de logiciels: ADP-GSI et Cegedim-SRH</em></p>
                                         </div>
-                                            <ul class="col-9 align-top">
-                                                <li>AMOA : Recenser les besoins du commanditaire, établir le cahier des charges, établir les spécifications fonctionnelles, piloter les phases de recette de l'application, concevoir des supports de formation et former des utilisateurs, présenter les évolutions du système d'information aux commanditaires. </li>
-                                                <li>MOE : Rédiger des spécifications fonctionnelles, paramétrer l'outil, effectuer les tests et corriger les anomalies</li>
-                                                <li>Chargé d'études RH: Collecter et analyser les données sociales, réaliser des études ponctuelles et des reportings récurrents.</li>
-                                            </ul>     
+                                            <div class="card-body-items col-9">
+                                                <p>AMOA : Recenser les besoins du commanditaire, établir le cahier des charges, établir les spécifications fonctionnelles, piloter les phases de recette de l'application, concevoir des supports de formation et former des utilisateurs, présenter les évolutions du système d'information aux commanditaires. </p>
+                                                <p>MOE : Rédiger des spécifications fonctionnelles, paramétrer l'outil, effectuer les tests et corriger les anomalies</p>
+                                                <p>Chargé d'études RH: Collecter et analyser les données sociales, réaliser des études ponctuelles et des reportings récurrents.</p>
+                                            </div>     
                                 </div><!--fin row consulting-->
                                 <div class="row">
                                     <h5 class="col-12">Ressources Humaines de 2005 à 2011</h5>
-                                        <em class="col-3">Nestlé, Saint-Gobain, Placoplatre, Toyota Material Handling France, Kraft foods France</em>
-                                        <ul class="col-9">
-                                            <li>Formation : Recueillir le besoin, mettre en oeuvre et suivre le plan de formation et établir le bilan de formation.</li>
-                                            <li>Paie : Saisir, contrôler les paies et établir des déclarations sociales</li>
-                                            <li>Administration du personnel : Rédiger les contrats de travail, administrer les dossiers individuels du personnel.</li>
-                                        </ul>   
+                                        <em class="card-body-items col-3">Nestlé, Saint-Gobain, Placoplatre, Toyota Material Handling France, Kraft foods France</em>
+                                        <div class="card-body-items col-9">
+                                            <p>Formation : Recueillir le besoin, mettre en oeuvre et suivre le plan de formation et établir le bilan de formation.</p>
+                                            <p>Paie : Saisir, contrôler les paies et établir des déclarations sociales</p>
+                                            <p>Administration du personnel : Rédiger les contrats de travail, administrer les dossiers individuels du personnel.</p>
+                                        </div>   
                                 </div><!--fin row RH-->
                                 <div class="row">
                                     <h5 class="col-12">Développeur d'applications stagiaire 2005 (2 mois)</h5>
@@ -99,46 +112,44 @@
                             </div><!--Fin card-body Experience-->
                     </div><!--fin expériences professionnelles-->
             <div id="cvComportement" class="card">
-                <h4 class="card-header">MES COMPETENCES COMPORTEMENTALES</h4>
+                <h4 class="card-header">Mes compétences comportementales</h4>
                     <div class="card-body">
-                        <ul class="row">
-                                <li class="col-3">Adaptabilité</li>
-                                <li class="col-3">Sens du service</li>
-                                <li class="col-3">Enthousiasme</li>
-                                <li class="col-3">Esprit d'équipe</li>
-                        </ul>
+                        <div class="row pl-5">
+                                <p class="col-3">Adaptabilité</p>
+                                <p class="col-3">Sens du service</p>
+                                <p class="col-3">Enthousiasme</p>
+                                <p class="col-3">Esprit d'équipe</p>
+                        </div>
                     </div><!--Fin card-body Comportement-->
             </div><!--fin compétences comportementales-->
             <div id="cvTechniques" class="card">
-                <h4 class="card-header">MES COMPETENCES TECHNIQUES</h4>
+                <h4 class="card-header">Mes compétences techniques</h4>
                     <div class="card-body">
-                        <ul class ="row">
-                            <li class="col-4 text-center">HTML</li>
-                            <li class="col-4 text-center">CSS</li>
-                            <li class="col-4 text-center">Bootstrap</li>
-                            <li class="col-4 text-center">Javascript</li>
-                            <li class="col-4 text-center">jQuery</li>
-                            <li class="col-4 text-center">Angular</li>
-                            <li class="col-4 text-center">Node.js</li>
-                            <li class="col-4 text-center">MongoDB</li>
-                            <li class="col-4 text-center">SQL</li>
-                            <li class="col-4 text-center">git (GitHub)</li>
-                            <li class="col-4 text-center">Jira</li>
-                            <li class="col-4 text-center">VBA</li>
-                        </ul>
+                        <div class ="row pl-5">
+                            <p class="col-4 text-center">HTML</p>
+                            <p class="col-4 text-center">CSS</p>
+                            <p class="col-4 text-center">Bootstrap</p>
+                            <p class="col-4 text-center">Javascript</p>
+                            <p class="col-4 text-center">jQuery</p>
+                            <p class="col-4 text-center">Angular</p>
+                            <p class="col-4 text-center">Node.js</p>
+                            <p class="col-4 text-center">MongoDB</p>
+                            <p class="col-4 text-center">SQL</p>
+                            <p class="col-4 text-center">git (GitHub)</p>
+                            <p class="col-4 text-center">Jira</p>
+                            <p class="col-4 text-center">VBA</p>
+                        </div>
                     </div><!--Fin card-body technique-->
             </div><!--fin compétences techniques-->
             <div id="cvLangue" class="card">
-                <h4 class="card-header">LANGUE ETRANGERE</h4>
-                    <div class="card-body">
-                        <ul>
-                            <li>Anglais : professionnel</li>
-                        </ul>
+                <h4 class="card-header">Langue</h4>
+                    <div class="card-body pl-5">
+                        <p>Anglais : professionnel </p>
                     </div><!--fin card-body langue-->
             </div><!--fin langue--> 
             <div id="cvHobbies" class="card">
-                <h4 class="card-header">MES HOBBIES</h4>
-                    <div class="card-body">
+                <h4 class="card-header">Mes hobbies</h4>
+                    <div class="card-body pl-5">
                         <ul>
                             <li>Volley-ball : 30 ans de pratique et animatrice baby et école de volley</li>
                             <li>Cyclotourisme : débutante</li>
