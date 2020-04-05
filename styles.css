@@ -37,12 +37,17 @@ a:hover{
     background-color: transparent;
     width: 300px;
 }
-/* .card-header{
-    transition: .3s transform ease-in-out;
+h5{
+    text-decoration: underline;
 }
-.card-header .collapsed {
-    transform: rotate(90deg);
-  } */
+.card-body-items{
+    align-items: stretch;
+}
+.card-header{
+    color:#b44981;
+    background-color:transparent;
+
+}
 .home{
     display: inline-block;
     width: 50px;
@@ -71,6 +76,9 @@ h4{
 .jumbotron{
     color:#555555;
     background-color: transparent;
+}
+ul li{
+    list-style: none;
 }
 .logoTaupe.img-thumbnail{
     padding: 0,9;
