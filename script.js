@@ -6,7 +6,13 @@ $(function(){
         $(this).hide(1000);
     });
 
-//scroll to top
+    $("#trou_init img.anim").each( function (index) {
+        $(this).addClass("step"+(index+1));
+    });
+
+    $(".trou").each(function () {
+        $(this).html($("#trou-init").html());
+    });
     
 
     
