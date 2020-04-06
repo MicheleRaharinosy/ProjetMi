@@ -1,10 +1,12 @@
 // script JS
 $(function(){
-
+    moteur = (function () {
+        return {  // retourne un objet
+            demarrer : function(){ console.log("moteur.demarrer()");},
+            stopper :  function() { console.log("moteur.stopper()");}
+            };
+    })();
     // lancemement du jeu
-        $("#boutonStart").click(function(){
-            $(this).hide(1000);
-        });
     
         $("#trou_init img.anim").each( function (index) {
             $(this).addClass("step"+(index+1));
@@ -13,5 +15,9 @@ $(function(){
         $(".trou").each(function () {
             $(this).html($("#trou-init").html());
         });
+
+
+    $("#btnJeuDemarrer").click(moteur.demarrer);
+    $("#btnJeuArreter").click(moteur.stopper);
     
     });
