@@ -103,52 +103,19 @@ ul li{
     opacity: 0.6;
 
 }
-.trou{
-    position: relative;
-    display: inline-block;
-    box-sizing: content-box;
-    width: 180px;
-    height: 134px;
-}
-.trou img{
-    display: block;
-    position:  absolute;
-    top: 0; 
-    left: 0;
-    z-index: 20;
-}
-.trou img.step0 { z-index: 10; }
-
-.anim{
-    visibility: hidden;
-    transition: visibility 0.10s;
-}
-.test:hover .anim {
-    visibility: visible ;
+#espacetrous {
+    background-image: url("assets/paysage.png") ;
     }
-
-    #hidden-html {
-        display: none ;
-        }
+#trou1{
+    display: inline-block;
+    background-image: url("assets/trou-taupe-1.png");
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility 1s;
     
-    
-    /* pour simplifier et faire comme bootstrap */
-    .ligne {
-        display: flex ;
-        flex-wrap: wrap ;
-        }
-    
-    /* le conteneur des images a une taille fixe */
-    .trou {
-        position: relative ;
-        display: inline-block ;
-        box-sizing : content-box ;
-        width : 180px ;
-        height: 134px ;
-    
-        /* pour etre bien vu sur la page de test */
-        margin: 10px ;
-        background : #a0eea0 ;
-        overflow: hidden ;
-        border: 1px solid #006600 ;
-        }
+}
+#trou1.visible{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s, visibility 1s;
+}
