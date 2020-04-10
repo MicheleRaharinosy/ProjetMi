@@ -2,49 +2,46 @@ $(function(){
    
     var espaceTrous = document.getElementById("espaceTrous");
     var trou1 = document.getElementById("trou1");
-    var txtImageTrouTaupe = '[{"filename":"trou-taupe-0.png"},{"filename":"trou-taupe-1.png"},{"filename":"trou-taupe-2.png"},{"filename":"trou-taupe-3.png"},{"filename":"trou-taupe-4.png"},{"filename":"trou-taupe-5.png"}]';
-    var imageTrouTaupe = JSON.parse(txtImageTrouTaupe);
+    var trou2 = document.getElementById("trou2");
+    var imageTrouTaupe = ["trou-taupe-0.png","trou-taupe-1.png","trou-taupe-2.png","trou-taupe-3.png","trou-taupe-4.png","trou-taupe-5.png"];
     console.log(imageTrouTaupe);
     var btnDemarrer = document.getElementById('boutonStart');
     
     
-    //au click du bouton démarrer
+   
     btnDemarrer.addEventListener('click',function(){alert('Go baby Go')},false);    
     
     btnDemarrer.addEventListener('click',apparitionTaupe,false); 
-    // btnDemarrer.addEventListener('click',changementTaupe,false); 
+    
 
     function apparitionTaupe (){
         var imageTaupe = document.createElement("img");            
+        var imageTaupe2 = document.createElement("img");
         imageTaupe.src = "assets/trou-taupe-0.png";
         document.querySelector("#trou1").appendChild(imageTaupe);
-        trou1.classList.toggle("visible");
-        setInterval(function(){
+        trou1.classList.toggle("visible");   
+
+        imageTaupe2.src = "assets/trou-taupe-3.png";
+        document.querySelector("#trou2").appendChild(imageTaupe2);
+        trou2.classList.toggle("visible");
+        var interval = setInterval(function(){
             trou1.classList.toggle("visible");
         },2000);
+        var interval2 = setInterval(function(){
+            trou2.classList.toggle("visible");
+        },4000);
+            setTimeout(function(){ 
+                clearInterval(interval),
+                clearInterval(interval2)
+            },20000);
     };    
+                  
+       
 
-    
-    
-
-    //remplir le trou1 avec la taupe 0
-
-    //passer un delai de 1 seconde, 
-    
-    //supprimer l'image actuelle
-    
-    //la remplacer avec une nouvelle
-
-
-
-    
-
-
-
-
-
-
-
+       
+        
+        
+ 
 
 
 });
