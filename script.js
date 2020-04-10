@@ -15,7 +15,8 @@ $(function(){
     // btnDemarrer.addEventListener('click',changementTaupe,false); 
 
     function apparitionTaupe (){
-        var imageTaupe = document.createElement("img");            imageTaupe.src = "assets/trou-taupe-0.png";
+        var imageTaupe = document.createElement("img");            
+        imageTaupe.src = "assets/trou-taupe-0.png";
         document.querySelector("#trou1").appendChild(imageTaupe);
         trou1.classList.toggle("visible");
         setInterval(function(){
@@ -23,10 +24,8 @@ $(function(){
         },2000);
     };    
 
-    var changementTaupe = setInterval(function(){
-        trou1.classList.toggle("visible");
-    },2000);
-    // var interval = setInterval(trou1.classList.toggle("visible"),3000);
+    
+    
 
     //remplir le trou1 avec la taupe 0
 
