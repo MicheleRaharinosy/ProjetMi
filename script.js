@@ -18,16 +18,19 @@ $(function(){
     var timerJeu = document.getElementById("timerJeu");
     
     function chrono(){
-        
+        var mon_temps = 0;
         var timeSec = 20;
         var timeInterv = setInterval(function(){
-            if (timeSec>=0){
-                timerJeu.innerHTML = timeSec --
+            mon_temps += 1;
+            if(mon_temps%10==0){
+                if (timeSec>=0){
+                    timerJeu.innerHTML = timeSec --
+                }
+                else{
+                    clearInterval(timeInterv)
+                }
             }
-            else{
-                clearInterval(timeInterv)
-            }
-        },1000)
+        },100)
     };
     
     function apparitionTaupe (){
