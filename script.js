@@ -7,8 +7,13 @@ $(function(){
     console.log(imageTrouTaupe);
     var btnDemarrer = document.getElementById('boutonStart');
     
+   
     btnDemarrer.addEventListener('click',function(){chrono()},false);    
     btnDemarrer.addEventListener('click',function(){apparitionTaupe()},false);  
+    $("#boutonStart").click(function(){
+        $("#boutonStart").toggleClass("disparition");
+    });
+
 
     var timerJeu = document.getElementById("timerJeu");
     

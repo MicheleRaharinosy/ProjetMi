@@ -39,6 +39,16 @@ transition: scale 2s;
     transform: scale(1.30)
     
   }
+#boutonStart{
+    opacity: 1;
+    visibility: visible;
+
+}
+#boutonStart.disparition{
+    opacity: 0;
+    visibility: hidden;
+    transform: opacity 0.250s, visibility 0.5s;
+}
 .card{
     background-color: transparent;
     width: 300px;
