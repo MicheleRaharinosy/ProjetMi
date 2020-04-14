@@ -18,20 +18,26 @@ a{
 a:hover{
     color:#b44981;
 }
+.activer{
+transform: scale(1);
+}
+.activer:hover{
+transform: scale(1.50);
+transition: scale 2s;
+}
 #barreJeu{
     min-height: 325px;
 }
-.boutonCv.btn-primary {
-    color: transparent;
-    background-color:transparent;
-    border-color: transparent;
+.boutonCv {
+    opacity: 0;
+    scale: 1;
   }
   
-.boutonCv.btn-primary:hover {
-    color: #fff;
-    background-color:transparent;
-    border-color: #6c757d;
-    font-size: x-small;
+.boutonCv:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    transform: scale(1.30)
+    
   }
 .card{
     background-color: transparent;
@@ -111,11 +117,11 @@ ul li{
     background-image: url("assets/trou-taupe-1.png");
     visibility: hidden;
     opacity: 0;
-    transition: opacity 1s, visibility 1s;
+    transition: opacity 0.5s, visibility 0.5s;
     
 }
 #trou1.visible, #trou2.visible{
     opacity: 1;
     visibility: visible;
-    transition: opacity 1s, visibility 1s;
+    transition: opacity 0.5s, visibility 0.5s;
 }
