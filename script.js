@@ -10,20 +10,19 @@ $(function(){
     btnDemarrer.addEventListener('click',function(){chrono()},false);    
     btnDemarrer.addEventListener('click',function(){apparitionTaupe()},false);  
 
+    var timerJeu = document.getElementById("timerJeu");
     
     function chrono(){
         
-        var timerJeu = document.getElementById("timerJeu");
-        
-        var intervalTimer = setInterval(function(){
-            var timerZero = new Date();
-            var maintenant = timerZero.getSeconds();
-            timerJeu.innerHTML = maintenant
-            ,1000});      
-            setTimeout(function(){
-                clearInterval(intervalTimer)
-            },20000);  
-        
+        var timeSec = 20;
+        var timeInterv = setInterval(function(){
+            if (timeSec>=0){
+                timerJeu.innerHTML = timeSec --
+            }
+            else{
+                clearInterval(timeInterv)
+            }
+        },1000)
     };
     
     function apparitionTaupe (){
